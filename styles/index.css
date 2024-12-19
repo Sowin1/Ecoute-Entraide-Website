@@ -110,10 +110,25 @@ main {
 
 /* =|= Footer */
 
+footer {
+    display: flex; 
+    padding: 30px; 
+    background-color: rgb(136, 136, 136); 
+    height: 10vh; 
+}
+
 footer div {
-    display: flex;
-    background-color: red;
-    height: 10vh;
+    padding-left: 6.5rem;
+    flex: 1; 
+    margin: 0 10px; 
+}
+footer div a{
+    color: black;
+}
+footer div a img{
+    width: 30px;
+    padding: 15px;
+    margin-left: 10px;
 }
 
 
