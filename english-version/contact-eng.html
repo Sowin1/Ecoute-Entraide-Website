@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index-eng.css">
+    <link rel="stylesheet" href="/english-version/styles/contact-eng.css">
     <title>Écoute & Entraide</title>
 </head>
 
@@ -14,9 +14,9 @@
     <header>
         <nav>
             <ul class="first">
-                <li><a href="index-eng.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="contact-eng.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
 
                 <li>
                     <a href="#">Languages</a>
@@ -53,62 +53,36 @@
 
         <div>
             <h1>Écoute & Entraide</h1>
-            <h5>Together, let's make a difference</h5>
+            <h5>Contact Us</h5>
         </div>
 
     </header>
 
     <main>
-
-        <div class="objectif">
-            <div>
-                <img src="../pictures/EE_t.png" alt="logo ecouteentraide">
-                <p>Find all the information related to our company <u>Listen & Support</u>. <br>
-                    You will also find our upcoming <u>articles</u> that make <strong>complex topics</strong> more
-                    <strong>accessible</strong>.
-                </p>
-
-
-            </div>
-
-        </div>
-
+        <h2>Contact Form</h2>
         <div class="separation"></div>
-
-        <h2>Who are we ?</h2>
-
-        <div class="quinoussommes">
+        <div class="formulaireContact">
             <div>
-                <p><strong>Écoute & Entraide</strong> aims to help all young people with their questions, no matter what
-                    they are.
-                    <br>
-                    Our goal is to create a safe and caring space where young people can speak freely and find the
-                    support they need to overcome their challenges.
-                </p>
-                <p><strong>We approach the issue from different perspectives:</strong></p>
-                <ul>
-                    <li>
-                        Establishing a <strong>space where young people can share with one another</strong>, to support
-                        and express themselves.
-                    </li>
-                    <li>
-                        Organizing <strong>discussion groups</strong> to delve into complex topics.
-                    </li>
-                    <li>
-                        Every young person in need of help receives <strong>personalized support</strong>. Our trained
-                        volunteers are there to guide these young people and offer assistance.
-                    </li>
-                    <li>
-                        We write <strong>articles</strong> that make complex topics more accessible, helping everyone
-                        better understand them.
-                    </li>
-                </ul>
+                <form method="post" action="#">
+                    <label for="nom">Last Name</label>
+                    <input type="text" id="nom" name="nom" required>
+        
+                    <label for="prenom">First Name</label>
+                    <input type="text" id="prenom" name="prenom" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <input type="submit" value="Send">
+                </form>
             </div>
-            <h5><a href="" target="_blank">Learn more</a></h5>
         </div>
-
-
+        
     </main>
+
 
 
 
