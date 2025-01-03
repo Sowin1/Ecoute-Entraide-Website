@@ -22,7 +22,7 @@ div.separation {
 }
 
 header {
-    background-image: url(../pictures/background.png);
+    background-image: url(../../pictures/background.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -194,7 +194,7 @@ div.objectif div p u:hover {
 }
 
 main h2 {
-    margin: 6% 34% 0;
+    margin: 6% 38% 0;
     font-size: 3rem;
 }
 
@@ -362,7 +362,7 @@ footer div a img:hover {
     /* =|= qui nous sommes responsive */
 
     main h2 {
-        margin: 6% 5% 0;
+        margin: 6% 20% 0;
         font-size: 1.8rem;
     }
 
