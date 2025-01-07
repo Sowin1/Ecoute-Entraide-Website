@@ -22,10 +22,10 @@ div.separation {
 }
 
 header {
-    background-image: url(../../pictures/background.png);
+    background-image: url(../pictures/background.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
 }
 
 header div h1,
@@ -115,7 +115,7 @@ nav ul li ul li a:hover {
 }
 
 header div {
-    margin-top: 6rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
 }
@@ -124,111 +124,43 @@ header div h1 {
     flex: 1;
     text-align: center;
     font-size: 7.5rem;
+    margin-top: 2rem;
     color: white;
 }
 
-header div h5 {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: white;
-}
+
 
 /* =|= Menue principal */
 main {
-    height: 180vh;
+    height: 100vh;
+    margin-top: 1%;
+    margin-left: 1rem;
     background-color: white;
 }
 
 main div.separation {
-    margin: 6rem 25% 0;
+    margin: 1rem 25% 0;
 }
 
-div.objectif {
-    display: flex;
-    width: 98%;
-    height: 26rem;
-    background-color: rgba(175, 175, 175, 0.37);
-    margin: 5% 0 0 13px;
+main div {
+    background-color: rgba(179, 179, 179, 0.199);
     border-radius: 2rem;
+    margin: 3rem;
+    width: 30%;
 }
 
-div.objectif div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 65%;
-    margin-top: 5%;
+main div h4 {
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+main div p {
+    font-size:  1.2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
-div.objectif div img {
-    width: 15rem;
-    height: 15rem;
-}
+/* =|= Formulaire de contact */
 
-div.objectif div p {
-    color: black;
-    font-size: 2rem;
-}
-
-div.objectif div p strong,
-div.objectif div p u {
-    display: inline-block;
-    transition: transform 0.6s ease-in-out;
-}
-
-div.objectif div p strong {
-    color: orange;
-}
-
-div.objectif div p u {
-    color: #67d38c;
-}
-
-div.objectif div p strong:hover,
-div.objectif div p u:hover {
-    transform: translateY(-10px) scale(1.1);
-}
-
-main h2 {
-    margin: 6% 38% 0;
-    font-size: 3rem;
-}
-
-div.quinoussommes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 95%;
-    padding: 20px;
-    border-radius: 2rem;
-    box-shadow: 15px 20px rgba(255, 165, 0, 0.67);
-    margin: 6rem 0 0 0.6rem;
-    font-size: 1.2rem;
-}
-
-div.quinoussommes p,
-div.quinoussommes ul {
-    margin: 0 0 15px;
-    padding-left: 20px;
-}
-
-div.quinoussommes ul li {
-    margin-bottom: 10px;
-}
-
-div.quinoussommes ul li strong {
-    color: orange;
-    display: inline-block;
-    transition: transform 0.6s ease-in-out;
-}
-
-div.quinoussommes ul li strong:hover {
-    transform: translateY(-10px) scale(1.1);
-}
 
 
 
@@ -329,52 +261,17 @@ footer div a img:hover {
         font-size: 1.2rem;
     }
 
-    /* =|= objectif responsive */
-
-    div.objectif {
-        width: 92%;
-        height: 30%;
+    main {
+        height: 60vh;
     }
-
-    div.objectif div {
-        flex-direction: column;
-        height: 75%;
-    }
-
-    div.objectif div img {
-        width: 8rem;
-        height: 8rem;
-    }
-
-    div.objectif div p {
-        color: black;
-        font-size: 1.1rem;
-        margin-left: 5px;
-    }
-
-
-    div.objectif div p strong:hover,
-    div.objectif div p u:hover {
-        transform: translateY(-10px) scale(1.1);
-    }
-
-
-    /* =|= qui nous sommes responsive */
 
     main h2 {
-        margin: 6% 20% 0;
-        font-size: 1.8rem;
+        margin: 10% 2.4% 10%;
+        font-size: 1.2rem;
     }
+    
 
-    div.quinoussommes {
-        width: 79%;
-        height: 60%;
-    }
 
-    div.quinoussommes p,
-    div.quinoussommes ul {
-        font-size: 0.9rem;
-    }
 
     /* =|= footer responsive */
 
