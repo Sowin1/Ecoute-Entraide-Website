@@ -136,30 +136,34 @@ main {
     margin-top: 1%;
     margin-left: 1rem;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main div.separation {
     margin: 1rem 25% 0;
 }
 
+/* =|= Mention Legale */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main div {
     background-color: rgba(179, 179, 179, 0.199);
+    width: 45%;
+    margin: 1rem;
     border-radius: 2rem;
-    margin: 3rem;
-    width: 30%;
+    padding: 2rem;  
 }
 
-main div h4 {
-    font-size: 1.3rem;
-    padding: 2rem;
-}
 main div p {
-    font-size:  1.2rem;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
-
-/* =|= Formulaire de contact */
 
 
 
@@ -262,7 +266,7 @@ footer div a img:hover {
     }
 
     main {
-        height: 60vh;
+        height: 100vh;
     }
 
     main h2 {
@@ -270,8 +274,16 @@ footer div a img:hover {
         font-size: 1.2rem;
     }
     
+     /* =|= mention légale responsive */
 
-
+    main div {
+        width: 70%;  
+    }
+    
+    main div p {
+        padding-top: 0rem;
+    
+    }
 
     /* =|= footer responsive */
 
