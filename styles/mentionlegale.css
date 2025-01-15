@@ -1,310 +1,296 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Noto Sans", serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", serif;
 }
 
 div.separation {
-    display: inline-block;
-    /* Demander prof pour le block */
-    background-color: rgb(210, 210, 210);
-    width: 50%;
-    height: 8px;
-    border-radius: 1rem;
-    margin-top: 1rem;
-
+  display: inline-block;
+  /* Demander prof pour le block */
+  background-color: rgb(210, 210, 210);
+  width: 50%;
+  height: 8px;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 #sidebar {
-    display: none;
+  display: none;
 }
 
 header {
-    background-image: url(../pictures/background.png);
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
+  background-image: url(../pictures/background.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
 }
 
 header div h1,
 header div h5 {
-    transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 header div h1:hover,
 header div h5:hover {
-    color: black;
+  color: black;
 }
 
 nav {
-    background-color: rgba(208, 255, 0, 0.233);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-family: "Noto Sans", serif;
+  background-color: rgba(208, 255, 0, 0.233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: "Noto Sans", serif;
 }
 
 nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav li {
-    position: relative;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
+  position: relative;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
 }
 
 nav li a {
-    display: flex;
-    color: #000;
-    text-decoration: none;
-    padding: 5px;
-    transition: all 0.3s ease;
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.3s ease;
 }
 
-nav li>a:hover:not(.dropdown-menu a) {
-    display: flex;
-    color: #ffffff;
-    font-size: 3rem;
-    transition: all 0.3s ease;
+nav li > a:hover:not(.dropdown-menu a) {
+  display: flex;
+  color: #ffffff;
+  font-size: 3rem;
+  transition: all 0.3s ease;
 }
-
 
 nav ul li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    list-style: none;
-    padding: 0;
-    z-index: 10;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li:hover ul {
-    display: flex;
-    flex-direction: column;
-    min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
 }
 
 nav ul li ul li {
-    padding: 0.5rem 1rem;
-    text-align: left;
+  padding: 0.5rem 1rem;
+  text-align: left;
 }
 
 nav ul li ul li a {
-    left: 5rem;
-    width: 100%;
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
+  left: 5rem;
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
 }
 
 nav ul li ul li a:hover {
-    background-color: orange;
-    color: white;
+  background-color: orange;
+  color: white;
 }
 
 header div {
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
 header div h1 {
-    flex: 1;
-    text-align: center;
-    font-size: 7.5rem;
-    margin-top: 2rem;
-    color: white;
+  flex: 1;
+  text-align: center;
+  font-size: 7.5rem;
+  margin-top: 2rem;
+  color: white;
 }
-
-
 
 /* =|= Menue principal */
 main {
-    height: 100vh;
-    margin-top: 1%;
-    margin-left: 1rem;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 100vh;
+  margin-top: 1%;
+  margin-left: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main div.separation {
-    margin: 1rem 25% 0;
+  margin: 1rem 25% 0;
 }
 
 /* =|= Mention Legale */
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main div {
-    background-color: rgba(179, 179, 179, 0.199);
-    width: 45%;
-    margin: 1rem;
-    border-radius: 2rem;
-    padding: 2rem;  
+  background-color: rgba(179, 179, 179, 0.199);
+  width: 45%;
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
 main div p {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
-
-
-
 
 /* =|= Footer */
 
 footer {
-    display: flex;
-    background-color: rgb(136, 136, 136);
-    padding-bottom: 20px;
+  display: flex;
+  background: linear-gradient(90deg, #3cc47c, #f58025);
+  padding-bottom: 20px;
 }
 
 footer div {
-    padding-left: 6.5rem;
-    flex: 1;
-    margin: 0 10px;
+  padding-left: 6.5rem;
+  flex: 1;
+  margin: 0 10px;
 }
 
 footer div a {
-    color: black;
+  color: black;
 }
 
 footer div a img {
-    width: 30px;
-    padding: 15px;
-    margin-left: 10px;
-    transition: transform 3s ease;
+  width: 30px;
+  padding: 15px;
+  margin-left: 10px;
+  transition: transform 3s ease;
 }
 
 footer div a img:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
-
-
 
 /* =|= Responsive taille standard tel */
 
-
-
-
 @media (max-width: 320px) {
-    #sidebar {
-        display: flex;
-        position: fixed;
-        width: 150px;
-        background: rgb(232, 155, 0);
-        left: -300px;
-        top: -6rem;
-    }
+  #sidebar {
+    display: flex;
+    position: fixed;
+    width: 150px;
+    background: rgb(232, 155, 0);
+    left: -300px;
+    top: -6rem;
+  }
 
-    #sidebar:hover {
-        left: 0;
-    }
+  #sidebar:hover {
+    left: 0;
+  }
 
-    #sidebar ul li {
-        list-style: none;
-        font-size: 20px;
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
+  #sidebar ul li {
+    list-style: none;
+    font-size: 20px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
 
-    #sidebar .bouton {
-        position: fixed;
-        bottom: 93.5%;
-        left: 0;
-        padding-left: 10px;
-    }
+  #sidebar .bouton {
+    position: fixed;
+    bottom: 93.5%;
+    left: 0;
+    padding-left: 10px;
+  }
 
-    div.bouton span {
-        width: 45px;
-        height: 4px;
-        background: #f2f2f2;
-        margin-top: 4px;
-    }
+  div.bouton span {
+    width: 45px;
+    height: 4px;
+    background: #f2f2f2;
+    margin-top: 4px;
+  }
 
-    header {
-        width: 100%;
-    }
+  header {
+    width: 100%;
+  }
 
-    nav ul li {
-        height: 2rem;
-    }
+  nav ul li {
+    height: 2rem;
+  }
 
-    nav ul li a {
-        display: none;
-    }
+  nav ul li a {
+    display: none;
+  }
 
-    /* =|= Header responsive */
+  /* =|= Header responsive */
 
-    header {
-        height: 60vh;
-    }
+  header {
+    height: 60vh;
+  }
 
-    header div h1 {
-        font-size: 2.2rem;
-    }
+  header div h1 {
+    font-size: 2.2rem;
+  }
 
-    header div h5 {
-        font-size: 1.2rem;
-    }
+  header div h5 {
+    font-size: 1.2rem;
+  }
 
-    main {
-        height: 100vh;
-    }
+  main {
+    height: 100vh;
+  }
 
-    main h2 {
-        margin: 10% 2.4% 10%;
-        font-size: 1.2rem;
-    }
-    
-     /* =|= mention légale responsive */
+  main h2 {
+    margin: 10% 2.4% 10%;
+    font-size: 1.2rem;
+  }
 
-    main div {
-        width: 70%;  
-    }
-    
-    main div p {
-        padding-top: 0rem;
-    
-    }
+  /* =|= mention légale responsive */
 
-    /* =|= footer responsive */
+  main div {
+    width: 70%;
+  }
 
-    footer  {
-        width: 100%;
-        margin-top: 15rem; 
-        padding: 0;
-        
-    }
-    
-    footer div {
-        padding-left: 0;
-        width: 4%;
-        font-size: 0.6rem;
-    }
+  main div p {
+    padding-top: 0rem;
+  }
 
-    footer div a img {
-        width: 10px;
-        padding: 0px;
-        padding-top: 8px;
-        margin-left: 5px;
-        transition: transform 3s ease;
-    }
+  /* =|= footer responsive */
+
+  footer {
+    width: 100%;
+    margin-top: 15rem;
+    padding: 0;
+  }
+
+  footer div {
+    padding-left: 0;
+    width: 4%;
+    font-size: 0.6rem;
+  }
+
+  footer div a img {
+    width: 10px;
+    padding: 0px;
+    padding-top: 8px;
+    margin-left: 5px;
+    transition: transform 3s ease;
+  }
 }
