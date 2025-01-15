@@ -138,7 +138,7 @@ header div h5 {
 
 /* =|= Menue principal */
 main {
-    height: 180vh;
+    height: 140vh;
     background-color: white;
 }
 
@@ -276,6 +276,7 @@ footer div a img:hover {
         background: rgb(232, 155, 0);
         left: -300px;
         top: -6rem;
+
     }
 
     #sidebar:hover {
@@ -288,19 +289,29 @@ footer div a img:hover {
         margin-left: 2rem;
         margin-top: 2rem;
     }
-
+    #sidebar ul li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
     #sidebar .bouton {
         position: fixed;
-        bottom: 93.5%;
+        bottom: 95.5%;
         left: 0;
         padding-left: 10px;
     }
 
     div.bouton span {
-        width: 45px;
-        height: 4px;
-        background: #f2f2f2;
+        width: 40px;
+        height: 3px;
+        background: #d4d4d4;
         margin-top: 4px;
+        border-radius: 50px;
+    }
+
+    div.bouton span:nth-child(2) {
+        width: 52px;
+        height: 3px;
+
     }
 
     header {
