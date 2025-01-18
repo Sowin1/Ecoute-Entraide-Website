@@ -27,11 +27,13 @@ header {
   height: 80vh;
 }
 
-header div h1 {
+header div h1,
+header div h5 {
   transition: color 1s ease;
 }
 
-header div h1:hover {
+header div h1:hover,
+header div h5:hover {
   color: black;
 }
 
@@ -111,7 +113,7 @@ nav ul li ul li a:hover {
 }
 
 header div {
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
 }
@@ -120,44 +122,68 @@ header div h1 {
   flex: 1;
   text-align: center;
   font-size: 7.5rem;
-  margin-top: 2rem;
+  color: white;
+}
+
+header div h5 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
   color: white;
 }
 
 /* =|= Menue principal */
 main {
   height: 100vh;
-  margin-top: 1%;
-  margin-left: 1rem;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-main div.separation {
+.separation {
   margin: 1rem 25% 0;
 }
-
-/* =|= Mention Legale */
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main div {
-  background-color: rgba(179, 179, 179, 0.199);
-  width: 45%;
+main > div:not(.separation) {
+  background-color: rgba(206, 205, 205, 0.342);
+  width: 75%;
   margin: 1rem;
   border-radius: 2rem;
   padding: 2rem;
+  margin-top: 8rem;
+}
+main > h2 {
+  margin-top: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+main div h2 {
+  font-size: 3rem;
+  text-align: center;
 }
 
-main div p {
-  padding-top: 1rem;
+main > div > p:first-of-type {
+  text-align: center;
+  font-size: 2rem;
 }
+main div div {
+  margin-top: 3rem;
+}
+
+main div div p {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.orange {
+  color: orange;
+}
+
+.vert {
+  color: #67d38c;
+}
+
+/* =|= Point specifique responsive */
 
 /* =|= Footer */
 
@@ -256,29 +282,38 @@ footer div a img:hover {
     font-size: 2.2rem;
   }
 
-  header div h5 {
-    font-size: 1.2rem;
-  }
-
-  main {
-    height: 100vh;
-  }
-
   main h2 {
     margin: 10% 2.4% 10%;
     font-size: 1.2rem;
   }
 
-  /* =|= mention légale responsive */
-
-  main div {
-    width: 70%;
+  /* =|= Point specifique responsive */
+  main {
+    height: 100vh;
   }
 
-  main div p {
-    padding-top: 0rem;
+  main > div:not(.separation) {
+    margin-top: 3rem;
+  }
+  main > h2 {
+    font-size: 2rem;
+  }
+  main div h2 {
+    font-size: 1.2rem;
   }
 
+  main > div > p:first-of-type {
+    font-size: 1rem;
+  }
+  main div div {
+    margin-top: 1rem;
+  }
+
+  main div div p {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
   /* =|= footer responsive */
 
   footer {
